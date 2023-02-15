@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/some_id4"
+        android:layout_width="149dp"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="74dp"
+        android:text="@string/some_id4"
+        android:textAppearance="@style/some_id"
+        android:lineSpacingExtra="-1sp"
+        android:gravity="center_vertical"
+        />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frame_354"
+        android:layout_width="332dp"
+        android:layout_height="46dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="133dp"
+        android:background="@drawable/frame_354"
+        />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frame_357"
+        android:layout_width="332dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="184dp"
+        android:background="@drawable/frame_357"
+        />
+
+    <RelativeLayout
+        android:id="@+id/frame_356"
+        android:layout_width="332dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="235dp"
+        android:background="@drawable/frame_356"
+        />
+
+    <TextView
+        android:id="@+id/some_id"
+        android:layout_width="43dp"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="291dp"
+        android:text="@string/some_id5"
+        android:textAppearance="@style/some_id"
+        android:lineSpacingExtra="4sp"
+        android:gravity="center_vertical"
+        />
+
+    <RelativeLayout
+        android:id="@+id/frame_359"
+        android:layout_width="332dp"
+        android:layout_height="46dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="323dp"
+        android:background="@drawable/frame_359"
+        />
+
+    <RelativeLayout
+        android:id="@+id/frame_360"
+        android:layout_width="332dp"
+        android:layout_height="45.84dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="374dp"
+        android:background="@drawable/frame_360"
+        />
+
+    <RelativeLayout
+        android:id="@+id/frame_351"
+        android:layout_width="332dp"
+        android:layout_height="46dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="425dp"
+        android:background="@drawable/frame_351"
+        />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frame_353"
+        android:layout_width="332dp"
+        android:layout_height="46dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="476dp"
+        android:background="@drawable/frame_353"
+        />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/some_id6"
+        android:layout_width="332dp"
+        android:layout_height="54dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="692dp"
+        android:background="@drawable/some_id"
+        />
+
+   </FrameLayout>
