@@ -30,4 +30,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/mobile_navigation" />
 
+    <GridView
+        android:id="@+id/categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:horizontalSpacing="16dp"
+        android:verticalSpacing="16dp"
+        android:padding="16dp"
+        android:stretchMode="column"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

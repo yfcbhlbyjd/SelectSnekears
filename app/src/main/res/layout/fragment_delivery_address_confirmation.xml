@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top_app_bar"
+        android:layout_width="360dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/top_app_bar"
+        />
 
     <TextView
         android:id="@+id/some_id4"
         android:layout_width="149dp"
         android:layout_height="22dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="14dp"
-        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
         android:layout_marginTop="74dp"
         android:text="@string/some_id4"
         android:textAppearance="@style/some_id"
@@ -17,27 +23,89 @@
         android:gravity="center_vertical"
         />
 
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/frame_354"
-        android:layout_width="332dp"
-        android:layout_height="46dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="14dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="133dp"
-        android:background="@drawable/frame_354"
+    <TextView
+        android:id="@+id/tv_personal_data"
+        android:layout_width="157dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="106dp"
+        android:text="@string/personal_data"
+        android:textAppearance="@style/dark_font"
+        android:lineSpacingExtra="4sp"
+        android:gravity="center_vertical"
         />
 
     <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frame_354"
+        android:layout_width="332dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="133dp"
+        android:background="@drawable/frame_354"
+        >
+        <TextView
+            android:id="@+id/tv_con_full_name"
+            android:layout_width="312dp"
+            android:layout_height="20dp"
+            android:text="@string/full_name"
+            android:textAppearance="@style/dark_blue"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/tv_con_code_country"
+            android:layout_width="38dp"
+            android:layout_height="20dp"
+            android:text="@string/code_country"
+            android:textAppearance="@style/average_size"
+            android:gravity="center_vertical"/>
+        <View
+            android:id="@+id/line_21"
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:background="@drawable/line_21"
+            />
+        <TextView
+            android:id="@+id/tv_con_phone_number"
+            android:layout_width="254dp"
+            android:layout_height="20dp"
+            android:text="@string/number"
+            android:textAppearance="@style/dark_blue"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/tv_con_name_country"
+            android:layout_width="220dp"
+            android:layout_height="20dp"
+            android:text="@string/name_country"
+            android:textAppearance="@style/average_size"
+            android:gravity="center_vertical"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
         android:id="@+id/frame_357"
         android:layout_width="332dp"
         android:layout_height="46dp"
         android:layout_marginStart="14dp"
         android:layout_marginTop="184dp"
         android:background="@drawable/frame_357"
-        />
+        >
+        <TextView
+            android:id="@+id/useremail_e"
+            android:layout_width="312dp"
+            android:layout_height="20dp"
+            android:text="@string/useremail_e"
+            android:textAppearance="@style/dark_blue"
+            android:gravity="center_vertical"
+            />
+        <View
+            android:id="@+id/vector"
+            android:layout_width="15.84dp"
+            android:layout_height="7.1dp"
+            android:background="@drawable/vector"
+            />
+
+    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/frame_356"
@@ -45,30 +113,48 @@
         android:layout_height="46dp"
         android:layout_marginStart="14dp"
         android:layout_marginTop="235dp"
-        android:background="@drawable/frame_356"
-        />
+        android:background="@drawable/frame_356">
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="342dp"
+            android:layout_height="20dp"
+            android:text="@string/city"
+            android:textAppearance="@style/small_size"
+            android:gravity="center_vertical"/>
+        <View
+            android:id="@+id/vector2"
+            android:layout_width="15.84dp"
+            android:layout_height="7.1dp"
+            android:background="@drawable/vector"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frame_351q"
+        android:layout_width="332dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="425dp"
+        android:background="@drawable/frame_351">
 
     <TextView
-        android:id="@+id/some_id"
+        android:id="@+id/tv_address"
         android:layout_width="43dp"
         android:layout_height="22dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="14dp"
-        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
         android:layout_marginTop="291dp"
         android:text="@string/some_id5"
-        android:textAppearance="@style/some_id"
+        android:textAppearance="@style/dark_font"
         android:lineSpacingExtra="4sp"
         android:gravity="center_vertical"
         />
+    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/frame_359"
         android:layout_width="332dp"
         android:layout_height="46dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="14dp"
-        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
         android:layout_marginTop="323dp"
         android:background="@drawable/frame_359"
         />
@@ -77,46 +163,76 @@
         android:id="@+id/frame_360"
         android:layout_width="332dp"
         android:layout_height="45.84dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="14dp"
-        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
         android:layout_marginTop="374dp"
-        android:background="@drawable/frame_360"
-        />
+        android:background="@drawable/frame_360">
+        <TextView
+            android:id="@+id/tv_country"
+            android:layout_width="132dp"
+            android:layout_height="14dp"
+            android:text="@string/country"
+            android:textAppearance="@style/small_size"
+            android:gravity="center_vertical"/>
+
+    </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/frame_351"
-        android:layout_width="332dp"
-        android:layout_height="46dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="14dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="425dp"
-        android:background="@drawable/frame_351"
-        />
-
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/frame_353"
         android:layout_width="332dp"
         android:layout_height="46dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="14dp"
-        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
         android:layout_marginTop="476dp"
         android:background="@drawable/frame_353"
-        />
+        >
+        <TextView
+            android:id="@+id/tv_index"
+            android:layout_width="312dp"
+            android:layout_height="20dp"
+            android:text="@string/index"
+            android:textAppearance="@style/size"
+            android:gravity="center_vertical"
+            />
+    </RelativeLayout>
 
     <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/found_a_mistake"
+        android:layout_width="141dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="532dp"
+        android:background="@drawable/found_a_mistake">
+        <TextView
+            android:id="@+id/tv_found_a_mistake"
+            android:layout_width="111dp"
+            android:layout_height="18dp"
+            android:text="@string/found_a_mistake"
+            android:textAppearance="@style/some_id"
+            android:gravity="top"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
         android:id="@+id/some_id6"
         android:layout_width="332dp"
         android:layout_height="54dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="14dp"
-        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
         android:layout_marginTop="692dp"
-        android:background="@drawable/some_id"
+        android:background="@drawable/some_id">
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="107dp"
+        android:layout_height="24dp"
+        android:text="@string/confirm"
+        android:textAppearance="@style/text_start_update"
+        android:gravity="top"
         />
+    </RelativeLayout>
 
-   </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/home"
+        android:layout_width="360dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="756dp"
+        android:background="@drawable/home"
+        />
+</RelativeLayout>
