@@ -37,7 +37,6 @@
         android:numColumns="2"
         android:horizontalSpacing="16dp"
         android:verticalSpacing="16dp"
-        android:padding="16dp"
-        android:stretchMode="column"/>
+        android:padding="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#90909033">
 
     <TextView
-        android:id="@+id/some_id"
+        android:id="@+id/tv_delivery_address"
         android:layout_width="147dp"
         android:layout_height="22dp"
         android:layout_marginStart="14dp"
         android:layout_marginTop="74dp"
-        android:text="@string/delivery_address"
-        android:textAppearance="@style/some_id"
+        android:text="@string/_delivery_address"
+        android:textAppearance="@style/dark_blue_average"
         android:lineSpacingExtra="-1sp"
         android:gravity="center_vertical"
         />
@@ -27,10 +29,10 @@
             android:id="@+id/tv_add_new_address"
             android:layout_width="178dp"
             android:layout_height="22dp"
-            android:text="@string/add_new_address"
+            android:text="@string/_add_new_address"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:textAppearance="@style/some_id"
+            android:textAppearance="@style/average_size"
             android:lineSpacingExtra="2sp"
             android:gravity="center_vertical"/>
     </RelativeLayout>
@@ -41,8 +43,8 @@
         android:layout_height="22dp"
         android:layout_marginStart="14dp"
         android:layout_marginTop="181dp"
-        android:text="@string/payment"
-        android:textAppearance="@style/some_id"
+        android:text="@string/_payment"
+        android:textAppearance="@style/dark_blue_average"
         android:lineSpacingExtra="-1sp"
         android:gravity="center_vertical"
         />
@@ -61,8 +63,8 @@
             android:layout_height="22dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="@string/select_payment_method"
-            android:textAppearance="@style/some_id"
+            android:text="@string/_select_payment_method"
+            android:textAppearance="@style/average_size"
             android:lineSpacingExtra="2sp"
             android:gravity="center_vertical"
             />
@@ -74,8 +76,8 @@
         android:layout_height="22dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="278dp"
-        android:text="@string/tv_goods"
-        android:textAppearance="@style/some_id"
+        android:text="@string/_goods"
+        android:textAppearance="@style/dark_blue_average"
         android:lineSpacingExtra="-1sp"
         android:gravity="center_vertical"
         />
@@ -93,7 +95,7 @@
             android:layout_width="192dp"
             android:layout_height="21dp"
             android:text="@string/nike_sneake"
-            android:textAppearance="@style/nike_sneake"
+            android:textAppearance="@style/black"
             android:lineSpacingExtra="0sp"
             android:gravity="top"
             />
@@ -107,8 +109,8 @@
             android:id="@+id/tv_sex_shoes"
             android:layout_width="192dp"
             android:layout_height="18dp"
-            android:text="@string/some_id"
-            android:textAppearance="@style/sex_shoes"
+            android:text="@string/_sex_shoes"
+            android:textAppearance="@style/very_small_gray"
             android:lineSpacingExtra="4sp"
             android:translationY="-1.97sp"
             android:gravity="top"/>
@@ -117,8 +119,8 @@
             android:id="@+id/tv_colors"
             android:layout_width="40dp"
             android:layout_height="17dp"
-            android:text="@string/colors"
-            android:textAppearance="@style/colors"
+            android:text="@string/_colors"
+            android:textAppearance="@style/less_than_average_gray"
             android:lineSpacingExtra="-2sp"
             android:gravity="center_vertical"/>
 
@@ -133,8 +135,8 @@
             android:id="@+id/tv_size"
             android:layout_width="58dp"
             android:layout_height="17dp"
-            android:text="@string/size"
-            android:textAppearance="@style/size"
+            android:text="@string/_size"
+            android:textAppearance="@style/less_than_average_gray"
             android:lineSpacingExtra="-2sp"
             android:gravity="center_vertical"
             />
@@ -157,15 +159,24 @@
             android:layout_height="17dp"
             android:gravity="center_vertical"
             android:lineSpacingExtra="-2sp"
-            android:text="@string/quantity"
-            android:textAppearance="@style/some_id" />
+            android:text="@string/_quantity"
+            android:textAppearance="@style/less_than_average_gray" />
 
         <TextView
             android:id="@+id/tv_minus"
             android:layout_width="6dp"
             android:layout_height="17dp"
             android:text="@string/minus"
-            android:textAppearance="@style/quantity"
+            android:textAppearance="@style/less_than_average_gray"
+            android:lineSpacingExtra="-2sp"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/tv_quantity_number"
+            android:layout_width="10dp"
+            android:layout_height="17dp"
+            android:text="@string/_quantity_number"
+            android:textAppearance="@style/average_blue"
             android:lineSpacingExtra="-2sp"
             android:gravity="center_vertical"
             />
@@ -174,7 +185,7 @@
             android:layout_width="9dp"
             android:layout_height="17dp"
             android:text="@string/plus"
-            android:textAppearance="@style/quantity"
+            android:textAppearance="@style/less_than_average_gray"
             android:lineSpacingExtra="-2sp"
             android:gravity="center_vertical"
             />
@@ -183,98 +194,98 @@
             android:layout_width="122dp"
             android:layout_height="25dp"
             android:text="@string/cost"
-            android:textAppearance="@style/cost"
+            android:textAppearance="@style/big_blue"
             android:lineSpacingExtra="2sp"
             android:translationY="-0.78sp"
             android:gravity="end|top"/>
 
         <TextView
-            android:id="@+id/tv_name"
+            android:id="@+id/tv_name_shoes"
             android:layout_width="138dp"
             android:layout_height="22dp"
-            android:text="@string/name"
-            android:textAppearance="@style/quantity"
+            android:text="@string/_name_shoes"
+            android:textAppearance="@style/less_than_average_gray"
             android:lineSpacingExtra="6sp"
             android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/tv_nike_sneaker"
+            android:layout_width="133dp"
+            android:layout_height="22dp"
+            android:text="@string/_nike_sneakers"
+            android:textAppearance="@style/little_blue"
+            android:lineSpacingExtra="6sp"
+            android:gravity="end|center_vertical"
             />
         <TextView
             android:id="@+id/tv_price"
             android:layout_width="142dp"
             android:layout_height="22dp"
-            android:text="@string/price"
-            android:textAppearance="@style/price"
+            android:text="@string/_price"
+            android:textAppearance="@style/small_gray"
             android:lineSpacingExtra="6sp"
             android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/_price_number"
+            android:layout_width="133dp"
+            android:layout_height="22dp"
+            android:text="@string/_price_number"
+            android:textAppearance="@style/little_blue"
+            android:lineSpacingExtra="6sp"
+            android:gravity="end|center_vertical"
             />
         <TextView
             android:id="@+id/tv_delivery"
             android:layout_width="124dp"
             android:layout_height="22dp"
-            android:text="@string/delivery"
-            android:textAppearance="@style/price"
+            android:text="@string/_delivery"
+            android:textAppearance="@style/small_gray"
             android:lineSpacingExtra="6sp"
             android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_cost_of_delivery"
+            android:layout_width="133dp"
+            android:layout_height="22dp"
+            android:text="@string/_cost_of_delivery"
+            android:textAppearance="@style/little_blue"
+            android:lineSpacingExtra="6sp"
+            android:gravity="end|center_vertical"
             />
         <TextView
             android:id="@+id/tv_discount"
             android:layout_width="129dp"
             android:layout_height="22dp"
-            android:text="@string/discount"
-            android:textAppearance="@style/price"
+            android:text="@string/_discount"
+            android:textAppearance="@style/small_gray"
             android:lineSpacingExtra="6sp"
             android:gravity="center_vertical"
-            />
-        <TextView
-            android:id="@+id/tv_promo_code_discount"
-            android:layout_width="171dp"
-            android:layout_height="22dp"
-            android:text="@string/promo_code_discount"
-            android:textAppearance="@style/price"
-            android:lineSpacingExtra="6sp"
-            android:gravity="center_vertical"
-            />
-        <TextView
-            android:id="@+id/nike_sneakers"
-            android:layout_width="133dp"
-            android:layout_height="22dp"
-            android:text="@string/nike_sneake"
-            android:textAppearance="@style/nike_sneake"
-            android:lineSpacingExtra="6sp"
-            android:gravity="end|center_vertical"
-            />
-        <TextView
-            android:id="@+id/tv_in_cost"
-            android:layout_width="133dp"
-            android:layout_height="22dp"
-            android:text="@string/in_cost"
-            android:textAppearance="@style/cost"
-            android:lineSpacingExtra="6sp"
-            android:gravity="end|center_vertical"
-            />
-        <TextView
-            android:id="@+id/tv_free"
-            android:layout_width="133dp"
-            android:layout_height="22dp"
-            android:text="@string/free"
-            android:textAppearance="@style/some_id"
-            android:lineSpacingExtra="6sp"
-            android:gravity="end|center_vertical"
             />
         <TextView
             android:id="@+id/tv_discount_result"
             android:layout_width="133dp"
             android:layout_height="22dp"
-            android:text="@string/discount_result"
-            android:textAppearance="@style/some_id"
+            android:text="@string/_discount_result"
+            android:textAppearance="@style/little_blue"
             android:lineSpacingExtra="6sp"
-            android:gravity="end|center_vertical"
+            android:gravity="end|center_vertical"/>
+        <TextView
+            android:id="@+id/tv_promo_code_discount"
+            android:layout_width="171dp"
+            android:layout_height="22dp"
+            android:text="@string/_promo_code_discount"
+            android:textAppearance="@style/small_gray"
+            android:lineSpacingExtra="6sp"
+            android:gravity="center_vertical"
             />
         <TextView
             android:id="@+id/tv_result_promo_code_discount"
             android:layout_width="103dp"
             android:layout_height="22dp"
-            android:text="@string/result_promo_code_discount"
-            android:textAppearance="@style/some_id"
+            android:text="@string/_result_promo_code_discount"
+            android:textAppearance="@style/little_blue"
             android:lineSpacingExtra="6sp"
             android:gravity="end|center_vertical"
             />
@@ -289,8 +300,8 @@
                 android:id="@+id/tv_enter_promo_code"
                 android:layout_width="110dp"
                 android:layout_height="22dp"
-                android:text="@string/enter_promo_code"
-                android:textAppearance="@style/some_id"
+                android:text="@string/_enter_promo_code"
+                android:textAppearance="@style/little_blue"
                 android:lineSpacingExtra="6sp"
                 android:gravity="center_vertical"
                 />
@@ -308,7 +319,7 @@
             android:id="@+id/tv_total"
             android:layout_width="58dp"
             android:layout_height="17dp"
-            android:text="@string/total"
+            android:text="@string/_total"
             android:textAppearance="@style/total"
             android:lineSpacingExtra="-6sp"
             android:gravity="center_vertical"/>
@@ -316,7 +327,7 @@
             android:id="@+id/tv_show_price"
             android:layout_width="114dp"
             android:layout_height="17dp"
-            android:text="@string/show_price"
+            android:text="@string/_show_price"
             android:textAppearance="@style/show_price"
             android:lineSpacingExtra="-11sp"
             android:gravity="end|center_vertical"
@@ -325,13 +336,13 @@
             android:id="@+id/tv_pay"
             android:layout_width="103dp"
             android:layout_height="35dp"
-            android:background="@drawable/iv_btn_pay">
+            android:background="@drawable/container_short_button">
             <TextView
                 android:id="@+id/tv_pay_text"
                 android:layout_width="73dp"
                 android:layout_height="19dp"
-                android:text="@string/some_id"
-                android:textAppearance="@style/some_id"
+                android:text="@string/_pay_text"
+                android:textAppearance="@style/white_average"
                 android:gravity="top"
                 />
             <View
@@ -352,6 +363,6 @@
         android:layout_width="360dp"
         android:layout_height="20dp"
         android:layout_marginTop="756dp"
-        android:background="@drawable/home"/>
+        android:background="@drawable/line_home"/>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

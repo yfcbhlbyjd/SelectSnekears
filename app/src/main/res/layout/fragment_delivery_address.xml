@@ -2,52 +2,54 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".paperwork.delivery_address.DeliveryAddressFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#90909033">
 
-    <RelativeLayout
-        android:id="@+id/top_app_bar"
-        android:layout_width="360dp"
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
         android:layout_height="64dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/top_app_bar"
-        />
+        android:background="@drawable/tab_bar" />
 
     <TextView
         android:id="@+id/tv_new_address"
         android:layout_width="122dp"
         android:layout_height="22dp"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="98dp"
-        android:text="@string/some_id"
-        android:layout_below="@id/top_app_bar"
-        android:textAppearance="@style/some_id"
+        android:layout_marginTop="104dp"
+        android:text="@string/new_address"
+        android:textAppearance="@style/dark_blue_average"
         android:lineSpacingExtra="-1sp"
         android:gravity="center_vertical"
         />
 
-    <RelativeLayout
-        android:id="@+id/frame_359"
-        android:layout_width="332dp"
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint="@color/gray"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/blue"
+        android:layout_width="382dp"
         android:layout_height="46dp"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="106dp"
+        android:layout_marginTop="136dp"
         android:background="@drawable/frame_359">
 
         <TextView
             android:id="@+id/tv_country"
             android:layout_width="132dp"
             android:layout_height="14dp"
-            android:text="@string/country"
+            android:text="@string/_country"
             android:layout_alignBottom="@id/tv_name_country"
             android:textAppearance="@style/small_size"
             android:gravity="center_vertical"
             />
-        <TextView
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tv_name_country"
-            android:layout_width="220dp"
+            android:layout_width="270dp"
             android:layout_height="20dp"
-            android:text="@string/name_country"
+            android:text="@string/_name_country"
             android:textAppearance="@style/average_size"
             android:gravity="center_vertical"
             />
@@ -57,147 +59,163 @@
             android:layout_height="7.1dp"
             android:background="@drawable/vector"
             />
-</RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/frame_360"
-        android:layout_width="332dp"
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint="@color/gray"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/blue"
+        android:layout_width="382dp"
         android:layout_height="45.84dp"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="157dp"
+        android:layout_marginTop="187dp"
         android:background="@drawable/frame_360">
-        <TextView
-        android:id="@+id/tv_city"
-        android:layout_width="342dp"
-        android:layout_height="20dp"
-        android:text="@string/city"
-        android:textAppearance="@style/small_size"
-        android:gravity="center_vertical"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tv_city"
+            android:layout_width="362dp"
+            android:layout_height="20dp"
+            android:text="@string/_city"
+            android:textAppearance="@style/dark_blue"
+            android:gravity="center_vertical"/>
         <View
             android:id="@+id/vector2"
             android:layout_width="15.84dp"
             android:layout_height="7.1dp"
             android:background="@drawable/vector"
             />
-        />
-    </RelativeLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
 
-    <RelativeLayout
-        android:id="@+id/frame_351"
-        android:layout_width="332dp"
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint="@color/gray"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/blue"
+        android:layout_width="382dp"
         android:layout_height="46dp"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="208dp"
+        android:layout_marginTop="238dp"
         android:background="@drawable/frame_351">
-        <TextView
+
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tv_street"
-            android:layout_width="312dp"
+            android:layout_width="362dp"
             android:layout_height="20dp"
-            android:text="@string/some_id"
-            android:textAppearance="@style/some_id"
+            android:text="@string/_street"
+            android:textAppearance="@style/dark_blue"
             android:gravity="center_vertical"
         />
-    </RelativeLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <RelativeLayout
-        android:id="@+id/frame_352"
-        android:layout_width="332dp"
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint="@color/gray"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/blue"
+        android:layout_width="382dp"
         android:layout_height="46dp"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="259dp"
+        android:layout_marginTop="289dp"
         android:background="@drawable/frame_352">
-        <TextView
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tv_home"
-            android:layout_width="312dp"
+            android:layout_width="362dp"
             android:layout_height="20dp"
-            android:text="@string/home"
-            android:textAppearance="@style/size"
+            android:text="@string/_home"
+            android:textAppearance="@style/dark_blue"
             android:gravity="center_vertical"/>
-    </RelativeLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-
-    <RelativeLayout
-        android:id="@+id/frame_353"
-        android:layout_width="332dp"
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint="@color/gray"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/blue"
+        android:layout_width="382dp"
         android:layout_height="46dp"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="310dp"
-        android:background="@drawable/frame_353"
-
-        >
-        <TextView
+        android:layout_marginTop="340dp"
+        android:background="@drawable/frame_353">
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tv_index"
             android:layout_width="312dp"
             android:layout_height="20dp"
-            android:text="@string/index"
-            android:textAppearance="@style/size"
+            android:text="@string/_index"
+            android:textAppearance="@style/dark_blue"
             android:gravity="center_vertical"
             />
-    </RelativeLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/some_id2"
-        android:layout_width="183dp"
+        android:id="@+id/tv_data_user"
+        android:layout_width="203dp"
         android:layout_height="22dp"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="371dp"
-        android:text="@string/some_id2"
-        android:textAppearance="@style/some_id"
+        android:layout_marginTop="431dp"
+        android:text="@string/data_user"
+        android:textAppearance="@style/dark_blue_average"
         android:lineSpacingExtra="-1sp"
         android:gravity="center_vertical"
         />
 
-    <RelativeLayout
-        android:id="@+id/frame_354"
-        android:layout_width="332dp"
-        android:layout_height="46dp"
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint="@color/gray"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/blue"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="403dp"
+        android:layout_marginTop="463dp"
         android:background="@drawable/frame_354">
-        <TextView
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tv_name_user"
             android:layout_width="312dp"
             android:layout_height="20dp"
-            android:text="@string/some_id"
-            android:textAppearance="@style/some_id"
+            android:text="@string/_name"
+            android:textAppearance="@style/dark_blue_average"
             android:gravity="center_vertical"
             />
-    </RelativeLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <RelativeLayout
-        android:id="@+id/frame_355"
-        android:layout_width="332dp"
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint="@color/gray"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/blue"
+        android:layout_width="382dp"
         android:layout_height="46dp"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="454dp"
+        android:layout_marginTop="514dp"
         android:background="@drawable/frame_355">
-        <TextView
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tv_surname"
             android:layout_width="312dp"
             android:layout_height="20dp"
-            android:text="@string/surname"
-            android:textAppearance="@style/size"
+            android:text="@string/_surname"
+            android:textAppearance="@style/dark_blue"
             android:gravity="center_vertical"
         />
-    </RelativeLayout>
-    <RelativeLayout
-        android:id="@+id/frame_357"
-        android:layout_width="332dp"
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint="@color/gray"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/blue"
+        android:layout_width="382dp"
         android:layout_height="46dp"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="505dp"
-        android:background="@drawable/frame_357"
-        >
+        android:layout_marginTop="565dp"
+        android:background="@drawable/frame_357">
         <TextView
             android:id="@+id/tv_code"
             android:layout_width="129dp"
             android:layout_height="14dp"
-            android:text="@string/code"
+            android:text="@string/_code"
             android:textAppearance="@style/small_size"
             android:gravity="center_vertical"
             />
-        <TextView
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tv_code_country"
             android:layout_width="38dp"
             android:layout_height="20dp"
@@ -205,40 +223,43 @@
             android:textAppearance="@style/average_size"
             android:gravity="center_vertical"
             />
-        <TextView
-            android:id="@+id/tv_phone_number"
-            android:layout_width="254dp"
-            android:layout_height="20dp"
-            android:text="@string/phone_number"
-            android:textAppearance="@style/size"
-            android:gravity="center_vertical"
-            />
-    </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/frame_356"
-        android:layout_width="332dp"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tv_phone_number"
+            android:layout_width="304dp"
+            android:layout_height="20dp"
+            android:text="@string/_phone_number"
+            android:textAppearance="@style/dark_blue"
+            android:gravity="right|center"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint="@color/gray"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/blue"
+        android:layout_width="382dp"
         android:layout_height="46dp"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="556dp"
+        android:layout_marginTop="616dp"
         android:background="@drawable/frame_356"
         >
-        <TextView
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tv_email"
-            android:layout_width="312dp"
+            android:layout_width="362dp"
             android:layout_height="20dp"
-            android:text="@string/email"
-            android:textAppearance="@style/size"
+            android:text="@string/_email"
+            android:textAppearance="@style/dark_blue"
             android:gravity="center_vertical"
             />
-    </RelativeLayout>
+    </com.google.android.material.textfield.TextInputLayout>
     <RelativeLayout
         android:id="@+id/btn_save"
-        android:layout_width="332dp"
+        android:layout_width="382dp"
         android:layout_height="54dp"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="692dp"
-        android:background="@drawable/some_id3"
+        android:layout_marginTop="752dp"
+        android:background="@drawable/container_button"
         >
 
         <TextView
@@ -248,14 +269,15 @@
             android:layout_marginTop="15dp"
             android:layout_marginStart="10dp"
             android:gravity="top"
-            android:text="@string/save"
+            android:text="@string/_save"
+            android:layout_centerHorizontal="true"
             android:textAppearance="@style/text_start_update" />
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/home"
-        android:layout_width="360dp"
+        android:layout_width="410dp"
         android:layout_height="20dp"
-        android:layout_marginTop="756dp"
-        android:background="@drawable/home"
+        android:layout_marginTop="816dp"
+        android:background="@drawable/line_home"
         />
 </FrameLayout>
